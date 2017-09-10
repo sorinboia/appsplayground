@@ -1,0 +1,20 @@
+.divWrapper {
+
+    max-width:500px;
+    margin: auto;
+    margin-top:50px;
+    border-width: thin;
+    border-color: #00B7FF;
+    border-style: solid;
+}
+
+input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
