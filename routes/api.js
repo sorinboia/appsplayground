@@ -15,6 +15,8 @@ router.get('/upload', function(req, res, next) {
 });
 
 router.post('/upload', function(req, res, next) {
+  console.log('*******************************************************');
+  console.log(req.headers);
   var busboy = new Busboy({ headers: req.headers });
   fileBuffer = {};
   resStatus={};
