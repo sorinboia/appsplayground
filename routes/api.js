@@ -21,6 +21,7 @@ router.post('/upload', function(req, res, next) {
   fileBuffer = {};
   resStatus={};
   busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+    console.log('New file',filename, encoding, mimetype);
     fileBuffer[filename] = new Buffer(0);
     file.on('data', function(data) {
       fileBuffer[filename] = Buffer.concat([fileBuffer[filename],data]);
